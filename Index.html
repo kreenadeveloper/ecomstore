@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SOULED STORE</title>
+  <!-- Required meta tags -->
+  <!-- <link href="./style.css" ref="style.css">  -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+ 
+   <!-- Bootstrap CSS v5.2.1 -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  
+
+ 
+    <style>
+       /* .nav-item a{
+    color: white;
+   } */
+   /* .nav-item{
+     height: 46px;
+     padding: 6px;
+     display: block;
+    background: #e11b23;
+    color: #fff;
+    font-size: .875rem;
+    text-transform: uppercase;
+    width: 107px;
+    text-align: center;
+    font-weight: 900; */
+
+   
+   /* .nav-item:hover{
+     background-color: white;
+   } */
+   /* .navbar-nav{
+     padding-left: 120px;
+   } */
+   /* #secondnav{
+     display: flex;
+     justify-content:space-evenly ;
+     align-items: center;
+     height: 60px;
+     background-color: white;
+     box-shadow: 0px 2px 3px #8888;
+     position: relative;
+   }
+   #secondnav.sticky{
+     position: fixed;
+     top: 0;
+     width: 100%;
+
+   }  */
+
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   .logo{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+  }
+  .menulist ul{
+    display: flex;
+    
+    gap: 20px;
+    list-style: none;
+  }
+  .menuicon ul{
+    display: flex;
+    justify-content:flex-endz;
+    gap: 20px;
+    list-style: none;
+  }
+  .menuicon ul li{
+    color: #262626;
+
+  }
+  #carouselId{
+    margin-top: 5px;
+  }
+  .carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    
+  }
+  h3{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .img-content p{
+    color:rgba(0, 0, 0, 0.789);
+    border-bottom: 1px solid rgba(16, 0, 0, 0.203); 
+    font-size: 12px;
+     margin-top:15px;
+     font-weight: 700;
+
+  }
+  .img-content{
+    color: #5b5c5e;
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 10px;
+    position: relative;
+  }
+  .img-content .price{
+    position: absolute;
+    top: 23px;
+    
+  }
+  h4{
+    margin-top: 40px;
+    padding-top: 10px;
+    height: 60px;
+    background-color: #e71318;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.1;
+    
+  } 
+  
+  
+
+  .footer{
+    background-color: #e6e7e8;
+    padding: 15px;
+    
+  
+  }
+
+  .footer .footer-menu h5{
+    padding-left: 28px;
+    color: #e71318;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  } 
+  .footer-menu ul{
+
+    list-style: none;
+    text-transform: capitalize;
+  }
+  .footer-menu ul li{
+    color: #595c65;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .footer-menu ul li:hover{
+    color: #e11b23;
+  }
+  .policy ul{
+    list-style: none;
+  }
+  .policy ul li{
+    color: #595c65;
+    line-height: 33px;
+    font-size: 13px;
+  }
+  .policy ul li .fa-solid{
+    font-weight: bold;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #58595b;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .app p{
+   color: #58595b;
+   font-size: 14px;
+   font-weight: bolder;
+  }
+  .play-store{
+   text-align: center;
+  }
+  .play-store img{
+   height: 40px;
+   width: 126px;
+  }
+  .socail ul {
+   list-style: none;
+  }
+  
+  .socail-icon .icon{
+   color: white;
+   height: 30px;
+    width: 30px;
+    border: 1px solid #58595b;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
+    border: none;
+  }
+  .face{
+   background-color: #6081c0;
+  }
+  .insta{
+   background-color: #c03694;
+  }
+  .snap{
+   background-color: #f9b927;
+  }
+  .twitter{
+   background-color: #4abbe9;
+  }
+  .plus{
+   background-color:#e6e7e8;
+   display: flex;
+   justify-content:space-between;
+  }
+  .plus a{
+   text-transform: uppercase;
+   text-decoration: none;
+   color:#e11b23 ;
+   font-weight: 700;
+   font-size: 13px;
+  }
+  .footer .container{
+   max-width: 1000px;
+  }
+  .p-title {
+   font-size: 13px;
+  }
+  .delivery img{
+   width: 44px;
+   
+  }
+  .POPULAR{
+   font-weight: 700;
+   font-size: 13px;
+   text-align: left;
+   color: #525964;
+   position: relative;
+   margin-bottom: 1px;
+   overflow: hidden;
+  
+  }
+  .POPULAR p{
+   display: inline-block;
+   margin: 21px 9.5px 17px 2px;
+  }
+
+  .POPULAR::after{
+   content: "";
+   border-bottom: 1px solid #a3a3a8;
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+  .s-content a{
+   text-decoration: none;
+   color: #525964;
+  }
+  .s-content{
+   font-size: 13px;
+  }
+  .last-icon{
+   font-size: 14px;
+   text-align: center;
+   font-weight: 700;
+
+  }
+  .scaleImg{
+   overflow: hidden;
+  }
+  .scaleImg img{
+   width: 100%;
+   height: 100%;
+   transition:  0.5s;
+  
+  } 
+  .scaleImg img:hover{
+   transform: scale(1.3);
+  }
+  .right-tab ul{
+   padding-left: 170px;
+   padding-top: 10px;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 12px;
+  }
+
+ 
+
+
+  /* .bs-nav-tabs-border-color: ; */
+  .nav-tabs{
+   border: none;
+   padding-left: 140px;
+  }
+  .top-nav{
+   border-left: 1px solid black;
+   
+  }
+  .top-nav button{
+   color: white;
+   font-family: futura-pt,sans-serif;
+   font-size: 15px;
+   font-weight: 800;
+   padding:10px 27px ;
+   
+  }
+  /* .nav-link{
+   color: wh;
+  } */
+  
+ .top-link:hover{
+   color: black;
+   background: white;
+ }
+ .navbar{
+   background-color: white;
+   height: 55px;
+   position: relative;
+   box-shadow:0px 2px 3px  rgba(0,0,0,.2);
+   position: sticky;
+   top: 0;
+   z-index: 3;
+ }
+
+ .nav-icon ul{
+   list-style: none;
+   color: #898484;
+   font-size: 20px;
+ }
+ .nav-icon ul li:hover{
+   color: #e11b23;
+  
+ }
+ .navbar-brand{
+   position: absolute; 
+   bottom: -9px;
+   left: 50px;
+ }
+ .navbar-collapse{
+   padding-left: 128px;
+ }
+ .navbar-collapse .nav-link{
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+ }
+ .nav-link:hover{
+   color: #e11b23;
+  
+ }
+
+      
+    </style>
+
+</head>
+
+<body>
+
+
+
+<div class="header bg-danger d-flex ">
+<div class="container ">
+  <div class="row align-items-center">
+    <div class="col-md-6 ">
+      <ul class="nav nav-tabs " id="myTab">
+        <li class="nav-item top-nav" role="presentation">
+          <button class="nav-link top-link active rounded-0 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">WOMEN</button>
+        </li>
+        <li class="nav-item  top-nav" role="presentation">
+          <button class="nav-link top-link rounded-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">MEN</button>
+        </li>
+        <li class="nav-item  top-nav" role="presentation">
+          <button class="nav-link top-link rounded-0" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">KIDS</button>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="col-md-6 right-tab">
+      <ul class="d-flex text-white gap-3">
+        <li>track order</li>
+        <li>contact us</li>
+        <li><i class="fa-solid fa-mobile-screen-button"></i> download app</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+</div>
+<nav class="navbar navbar-expand-sm navbar-light  d-flex justify-content-space-between ">
+    <div class="container ">
+    <a class="navbar-brand" href="#" id="brand-logo">
+      <img src="LOGO/newlogo.8dcc6cc.png" alt="">
+      <img  src="LOGO/download.png" alt="" style="position:absolute; top: 30px; right: 80px;">
+    </a>
+    
+    
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-center gap-2">
+        <li class="nav-item">
+          <a class="nav-link " href="#">Topwear <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bottomwear <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shoes & Accessories <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop by Themes <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">membership </a>
+        </li>
+       
+      </ul>
+      <div class="nav-icon pt-2 ">
+        <ul class="d-flex gap-4 ">
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-regular fa-user"></i></li>
+          <li><i class="fa-regular fa-heart"></i></li>
+          <li><i class="fa-solid fa-bag-shopping"></i></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+    <!-- <div id="secondnav">
+      <div class="logo">
+        <img src="LOGO/newlogo.8dcc6cc.png" alt="">
+      </div>
+      <div class="menulist">
+        <ul>
+          <li>Topwear</li>
+          <li>Bottomwear</li>
+          <li>Shoes & Accessories
+          </li>
+          <li>Shop by Themes
+          </li>
+          <li>membership</li>
+        </ul>
+      </div>
+      <div class="menuicon">
+       
+      </div>
+      
+      
+    </div>     -->
+    <!--  
+   
+  
+    
+   
+
+      <!-- OFFICIAL MERCHANDISE -->
+
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="fourth slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="IMAGE/Homepage--Banner_14_CTaDSMs.webp" class="w-100 d-block" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="IMAGE/Homepage-Banner-_1.webp" class="w-100 d-block" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="IMAGE/Homepage-banner_6_L3MeqJN.webp" class="w-100 d-block" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img src="IMAGE/Web-Banner_15_4Rm7PWU.webp" class="w-100 d-block" alt="Fourth slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+
+      <h3>COLLECTIONS</h3>
+      <div class="container-fluid mt-2 mb-2">
+        <div class="row">
+            <div class="col-md-4 mb-2 "> 
+              <img src="./IMAGE/Linen-shirts.jpg" alt=""  width="100%" >
+  
+            </div>
+            <div class="col-md-4">     
+                 <img src="IMAGE/hot-mess_1.webp" alt="" width="100%">
+            </div>
+            <div class="col-md-4">       
+                 <img src="IMAGE/all-new-crop-tops-collection-tile2_1.webp" alt="" width="100%">
+            </div>
+        </div>
+      </div>
+
+      <h3>SHOP BY COLOUR</h3>
+      <div class="container-fluid mb-2 ">
+        <div class="row">
+            <div class="col-md-4 "> 
+              <img src="./IMAGE/PINK-5_1_RePzrCi.webp" alt=""  width="100%" >
+  
+            </div>
+            <div class="col-md-4">     
+                 <img src="IMAGE/BLACK_fVg1sIX.webp" alt="" width="100%">
+            </div>
+            <div class="col-md-4">       
+                 <img src="IMAGE/White-Collection-Tile_i7nJO3y.webp" alt="" width="100%">
+            </div>
+        </div>
+      </div>
+
+
+     <div>
+      <h3>CATEGORIES</h3>
+      <div class="container-fluid mb-2 ">
+        <div class="row">
+            <div class="col-md-4  scaleImg zoom loaded"> 
+              <img src="IMAGE/top.webp" alt=""  width="100%" >
+  
+            </div>
+            <div class="col-md-4  scaleImg zoom loaded">     
+                 <img src="IMAGE/oversized.webp" alt="" width="100%">
+            </div>
+            <div class="col-md-4 scaleImg zoom loaded">       
+                 <img src="IMAGE/co-ords set.webp" alt="" width="100%">
+            </div>
+        </div>
+      </div> 
+
+       <div class="container-fluid mb-2 ">
+        <div class="row">
+            <div class="col-md-4 scaleImg zoom loaded "> 
+              <img src="IMAGE/boyfriend.webp" alt=""  width="100%" >
+  
+            </div>
+            <div class="col-md-4  scaleImg zoom loaded">     
+                 <img src="IMAGE/cargo.webp" alt="" width="100%">
+            </div>
+            <div class="col-md-4  scaleImg zoom loaded">       
+                 <img src="IMAGE/shirts.webp" alt="" width="100%">
+            </div>
+        </div>
+      </div> 
+
+
+       <div class="container-fluid  mb-2">
+        <div class="row">
+          <div class="col-md-3  scaleImg zoom loaded">
+            <img src="IMAGE/innerwear.webp" alt=""  width="100%">
+          </div>
+          <div class="col-md-3  scaleImg zoom loaded">
+            <img src="IMAGE/dress.webp" alt="" width="100%">
+          </div>
+          <div class="col-md-3  scaleImg zoom loaded">
+            <img src="IMAGE/shoes.webp" alt="" width="100%">
+          </div>
+          <div class="col-md-3  scaleImg zoom loaded">
+            <img src="IMAGE/Sweaters-.webp" alt="" width="100%">
+          </div>
+        </div>
+      </div>
+    </div> 
+
+       
+
+    <h3>SHOP BY OCCASIONS</h3>
+    <div class="container-fluid d-flex gap-2 p-3">
+      
+          <div class="col-md-4"> 
+            <img src="./IMAGE/collection-tile-edit4.webp" alt=""  width="100%" >
+
+          </div>
+          <div class="col-md-4">     
+               <img src="./IMAGE/college.webp" alt="" width="100%">
+          </div>
+          <div class="col-md-4">       
+               <img src="./IMAGE/office.webp" alt="" width="100%">
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <h3>OFFICIAL MERCHANDISE
+      </h3>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+
+       <div class="carousel-inner d-flex" role="listbox"> 
+
+        <div class="carosel-item active">
+         <div class="row">
+          <div class="col-2"> <img src="LOGO/artist-tile10_OWksbxV.webp" class="w-100 d-block"alt=""></div>
+          <div class="col-2"> <img src="LOGO/artist-tile1_OJsQtB2.webp" class="w-100 d-block"alt=""></div>
+          <div class="col-2"> <img src="LOGO/artist-tile3_qeGQ8nQ.webp" class="w-100 d-block"alt=""></div>
+          <div class="col-2"> <img src="LOGO/artist-tile7_lkVI8t4.webp" class="w-100 d-block"alt=""></div>
+          <div class="col-2"> <img src="LOGO/artist-tile9_MB5YXeV.webp" class="w-100 d-block"alt=""></div>
+          <div class="col-2"> <img src="LOGO/artist-tile8_mWpaZWa.webp" class="w-100 d-block"alt=""></div>
+        
+        </div>
+       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div> 
+
+
+    <h3>
+      TOP SELLING
+    </h3>
+     <div class="container-fluid mb-5"> 
+      <div class="row">
+        <div class="col-md-3">
+         
+              <img src="IMAGE/Top-Selling-Tile-Linen-Lime_1_jcma5qH.webp" alt="" class="w-100">
+              <div class="img-content">
+           
+          <p>Linen:Lime</p>
+          <div class="price">
+              <span>Shirts</span><br>
+              <span>₹ 1299</span>
+            </div>
+              
+            </div>
+        </div>
+        <div class="col-md-3">
+          
+              <img src="IMAGE/Top-Selling-Tile-Looney-Tunes-Bugs-Bunny-Champ_1.webp" alt="" class="w-100">
+              <div class="img-content">
+
+          <p >Looney Tunes: Bugs Bunny Champ</p>
+          <div class="price">
+              <span>Joggers</span><br>
+              <span>₹ 1299</span>
+          </div>
+            </div>
+        </div>
+        <div class="col-md-3 ">
+              <img src="IMAGE/friends_2_opoxNrj.webp" alt="" class="w-100">
+              <div class="img-content">
+            
+           <p >F.R.I.E.N.D.S: All Elements</p>
+           <div class="price">
+              <span>Womens T-shirts</span><br>
+              <span>₹ 699</span>
+           </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+          
+              <img src="IMAGE/Denim-Shorts-Blue-Colourblock-women-denim-shorts.jpg1_NuURycd.webp" alt="" class="w-100">
+              <div class="img-content">
+           
+          <p >Denim Shorts: Blue Colourblock</p>
+          <div class="price">
+          <span >Shorts</span><br>
+          <span>₹ 1499</span>
+        </div>
+              </div>
+        </div>
+      </div>
+    </div> 
+
+    <h3 style="margin-top: 10px;">MEMBERSHIP</h3>
+
+    <div class="section bg-primary">
+          <img src="IMAGE/banner.webp" alt="" class="w-100">
+    </div>
+     
+
+
+
+
+
+
+
+
+
+<section style="width: 100%;">
+  <div class="kareena bg-danger text-center text-white w-100">
+    <h4>HOMEGROWN INDIAN BRAND
+    </h4>
+  </div>
+</section>
+
+
+
+    
+
+
+
+    
+     <p style="text-align: center;font-size: 40px;color: black;">
+         Over <b>6 Million</b> Happy Customers
+    </p>
+  <div class="footer"> 
+        <div class="container mt-3 pt-2 ">
+          <div class="row ">
+            <div class="col-md-3 footer-menu">
+              <h5>Need Help</h5>
+              <ul>
+                <li>Contact us</li>
+                <li>Track Order</li>
+                <li>Returns & Refunds</li>
+                <li>FAQs</li>
+                <li>My Account</li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-menu">
+              <h5>company</h5>
+              <ul>
+                <li>about us</li>
+                <li>careers</li>
+                <li>community initiatives</li>
+                <li>Souled Army</li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 footer-menu">
+              <h5>More Info</h5>
+              <ul>
+                <li>T&C</li>
+                <li>Privacy policy</li>
+                <li>sitemap</li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 footer-menu">
+              <h5>Store near me</h5>
+              <ul>
+                <li>bandra</li>
+                <li>thane</li>
+                <li>colaba</li>
+                <li>palladium</li>
+                <li>pune</li>
+                <li>banglore</li>
+                <li>malad</li>
+                <li>ghatkopar</li>
+                <li>goregaon</li>
+                <li>ahmedabad</li>
+                <li>Haryana</li>
+                <li>indore</li>
+                <li>bhopal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container mb-2">
+          <div class="row">
+            <div class="col-md-12 policy">
+              <ul>
+                <li><i class="fa-solid fa-indian-rupee-sign "></i> COD Available
+                </li>
+                <li><i class="fa-solid fa-rotate "></i> 30 Days Easy Returns</li>
+              </ul>
+            </div>
+          </div>
+          
+        
+
+
+      </div> 
+      <div class="container mb-2">
+        <div class="row ">
+          <div class="col-md-12 app text-center text-#965d5e p-0">
+           <p> <i class="fa-solid fa-mobile-screen"></i> EXPERIENCE THE SOULED STORE APP</p> 
+          </div>
+        </div>
+      
+      <div class="play-store">
+       <a href=""><img src="LOGO/play-store.webp" alt="" class=""></a> <a href=""><img src="LOGO/app-store.webp" alt="" class=""></a>
+      </div>
+    </div>
+
+
+<div class="container mb-2">
+    <div class="row ">
+      <div class="col-md-5  col-12 " >
+      <div class="socail-icon d-flex gap-2  col-12 ">
+        <p>Follow us:</p>
+        <div class="face icon">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="insta icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="snap icon">
+          <i class="fa-brands fa-snapchat"></i>
+
+        </div>
+        <div class="twitter icon">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+      
+      <div class="card rounded-0  ">
+        <div class="card-header plus p-3">
+          <a  href="">Navigations Links </a><a href=""><i class="fa-solid fa-plus"></i></a>
+        </div>
+        <div class="card-header plus p-3 ">
+          <a   href="">Who We Are </a><a href=""><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 d-flex justify-content-center align-items-center gap-2">
+     <div class="p-title">100% Secure Payment:</div> 
+      <img src="IMAGE/payments-icon.e77ef49.png" alt="" width="70%"> 
+    </div>
+  
+    <div class="col-md-6 d-flex justify-content-center align-items-center gap-2 delivery" >
+    <div class="p-title">Shipping Partners :</div> 
+    <img src="LOGO/fedex.png" alt="">
+    <img src="LOGO/dtdc.webp" alt="">
+    <img src="LOGO/delivery.webp" alt="">
+    <img src="LOGO/ECOM-Express.webp" alt="">
+    <img src="LOGO/XPRESSBEES.webp" alt="">
+  </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mt-2 POPULAR">
+      <P>POPULAR SEARCHES</P>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-md-12 s-content">
+    <a href="">T-shirts |</a>
+    <a href="">Oversized T-shirts |</a>
+    <a href="">Hoodies |</a>
+    <a href="">Sweatshirts |</a>
+    <a href="">Joggers |</a>
+    <a href="">Shorts |</a>
+    <a href="">T-shirts |</a>
+    <a href="">Tops |</a>
+    <a href="">Dresses |</a>
+    <a href="">Sweatshirts |</a>
+    <a href="">Hoodies |</a>
+    <a href="">Shorts |</a>
+    <a href="">Joggers |</a>
+    <a href="">Vacation Wear |</a>
+  </div>
+  </div>
+
+ <div class="row">
+  <div class="col-md-12 last-icon mt-2">
+    <p><i class="fa-regular fa-copyright"></i> The Souled Store 2023-24</p>
+  </div>
+ </div>
+</div>
+
+  </div> 
+
+   
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+  </script>
+  <script>
+    let logo = document.getElementById('')
+  </script>
+  
+</body>
+
+</html>
